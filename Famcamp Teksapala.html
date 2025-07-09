@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAMILY CAMP TEKSAPALA VOL.2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        /* GANTI LINK FOTO DI BAWAH INI */
+                        url('https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 1rem;
+        }
+        
+        .btn-primary {
+            background-color: #2d3748;
+            color: white;
+            padding: 0.75rem 1.875rem;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        
+        .btn-primary:hover {
+            background-color: #1a202c;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-card {
+            transition: all 0.3s ease;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .theme-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .theme-icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            color: #2d3748;
+        }
+        
+        .section {
+            padding: 5rem 1rem;
+        }
+        
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .date-badge {
+            background-color: #2d3748;
+            color: white;
+            padding: 0.375rem 1.25rem;
+            border-radius: 20px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">FAMILY CAMP TEKSAPALA VOL.2</h1>
+            <h2 class="text-xl md:text-2xl mb-8">"Bersama Alam, Menuju 4 Dekade Keberlanjutan"</h2>
+            <div class="date-badge">9-10 Agustus 2025</div>
+            <a href="#pendaftaran" class="btn-primary">DAFTAR SEKARANG</a>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="section">
+        <div class="container">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="section-title">HALO KELUARGA BESAR TEKSAPALA!</h2>
+                <p class="text-lg mb-6">
+                    Dengan penuh kebanggaan dan sukacita, kami mengundang Anda semua untuk bergabung dalam FAMILY CAMP TEKSAPALA VOL.2 tahun 2025. Acara spesial ini akan menjadi momen bersejarah dalam menyambut 35 tahun perjalanan TEKSAPALA berkontribusi untuk alam dan lingkungan.
+                </p>
+                <p class="text-lg mb-8">
+                    Rayakan kebersamaan di tengah keindahan alam sambil mempererat ikatan kekeluargaan antar generasi. Mari kita ciptakan kenangan indah yang akan dikenang hingga bertahun-tahun ke depan!
+                </p>
+                <a href="#" class="text-blue-600 font-semibold inline-flex items-center">
+                    <i class="fab fa-instagram mr-2"></i> Lihat Postingan Kami
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details Section -->
+    <section class="section bg-gray-100">
+        <div class="container">
+            <h2 class="section-title">DETAIL ACARA</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card text-center">
+                    <i class="fas fa-calendar-alt text-4xl mb-4 text-gray-700 mx-auto"></i>
+                    <h3 class="text-xl font-semibold mb-2">Tanggal</h3>
+                    <p>9-10 Agustus 2025 (2 hari 1 malam)</p>
+                </div>
+                
+                <div class="card text-center">
+                    <i class="fas fa-map-marker-alt text-4xl mb-4 text-gray-700 mx-auto"></i>
+                    <h3 class="text-xl font-semibold mb-2">Lokasi</h3>
+                    <p>New Ciputri Camping Ground, Kabupaten Bogor, Jawa Barat</p>
+                </div>
+                
+                <div class="card text-center">
+                    <i class="fas fa-users text-4xl mb-4 text-gray-700 mx-auto"></i>
+                    <h3 class="text-xl font-semibold mb-2">Peserta</h3>
+                    <p>Anggota TEKSAPALA + keluarga (terbuka untuk semua generasi)</p>
+                </div>
+                
+                <div class="card text-center">
+                    <i class="fas fa-ticket-alt text-4xl mb-4 text-gray-700 mx-auto"></i>
+                    <h3 class="text-xl font-semibold mb-2">HTM</h3>
+                    <p>Rp 350.000/orang (Makan 3x, Baju TEKSAPALA, Simaksi, dsb.)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">HIGHLIGHT KEGIATAN</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="feature-card">
+                    <div class="p-6 h-full flex flex-col">
+                        <i class="fas fa-gamepad text-4xl mb-4 text-gray-700 mx-auto"></i>
+                        <h3 class="text-xl font-semibold mb-2 text-center">FUN GAMES KELUARGA</h3>
+                        <p class="text-gray-600 text-center mt-auto">Serangkaian permainan seru yang dirancang untuk mempererat kebersamaan keluarga.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="p-6 h-full flex flex-col">
+                        <i class="fas fa-water text-4xl mb-4 text-gray-700 mx-auto"></i>
+                        <h3 class="text-xl font-semibold mb-2 text-center">EKSPLORASI CURUG</h3>
+                        <p class="text-gray-600 text-center mt-auto">Petualangan menyusuri sungai dan menemukan keindahan air terjun tersembunyi.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="p-6 h-full flex flex-col">
+                        <i class="fas fa-tree text-4xl mb-4 text-gray-700 mx-auto"></i>
+                        <h3 class="text-xl font-semibold mb-2 text-center">PENANAMAN BIBIT POHON</h3>
+                        <p class="text-gray-600 text-center mt-auto">Aksi nyata pelestarian alam dengan menanam pohon untuk generasi mendatang.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="p-6 h-full flex flex-col">
+                        <i class="fas fa-fire text-4xl mb-4 text-gray-700 mx-auto"></i>
+                        <h3 class="text-xl font-semibold mb-2 text-center">API UNGGUN & STORYTELLING</h3>
+                        <p class="text-gray-600 text-center mt-auto">Berbagi cerita perjalanan TEKSAPALA selama 35 tahun.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Theme Section -->
+    <section class="section bg-gray-100">
+        <div class="container">
+            <h2 class="section-title">TEMA</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="card p-8 mb-8">
+                    <h3 class="text-2xl font-semibold mb-6 text-center">Fokus Kegiatan</h3>
+                    
+                    <div class="theme-item">
+                        <i class="fas fa-heart theme-icon"></i>
+                        <div>
+                            <h4 class="font-semibold">Koneksi emosional</h4>
+                            <p class="text-gray-600">Memperkuat ikatan keluarga melalui pengalaman bersama di alam</p>
+                        </div>
+                    </div>
+                    
+                    <div class="theme-item">
+                        <i class="fas fa-heartbeat theme-icon"></i>
+                        <div>
+                            <h4 class="font-semibold">Kesehatan fisik dan mental</h4>
+                            <p class="text-gray-600">Aktivitas outdoor untuk kebugaran dan relaksasi pikiran</p>
+                        </div>
+                    </div>
+                    
+                    <div class="theme-item">
+                        <i class="fas fa-hiking theme-icon"></i>
+                        <div>
+                            <h4 class="font-semibold">Kemandirian dan tanggung jawab</h4>
+                            <p class="text-gray-600">Belajar bertanggung jawab terhadap diri sendiri dan lingkungan</p>
+                        </div>
+                    </div>
+                    
+                    <div class="theme-item">
+                        <i class="fas fa-paint-brush theme-icon"></i>
+                        <div>
+                            <h4 class="font-semibold">Kreativitas dan cinta alam</h4>
+                            <p class="text-gray-600">Menggali potensi kreatif melalui interaksi dengan alam</p>
+                        </div>
+                    </div>
+                    
+                    <div class="theme-item">
+                        <i class="fas fa-brain theme-icon"></i>
+                        <div>
+                            <h4 class="font-semibold">Refleksi dan syukur</h4>
+                            <p class="text-gray-600">Momen menghargai perjalanan panjang TEKSAPALA</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card p-8">
+                    <blockquote class="italic text-lg text-center mb-6">
+                        "Family camp ini bukan sekedar kegiatan rekreasi melainkan sebuah ritual kembali kepada esensi keluarga di mana keheningan alam menjadi saksi kerjasama, kepercayaan, dan kasih sayang yang tumbuh dalam kesederhanaan di tengah suara desir angin dan kecipak air."
+                    </blockquote>
+                    <p class="text-center">
+                        Inilah momentum dan waktu yang berkualitas untuk berbagi pengalaman satu sama lain tanpa gangguan layar digital yang akan mempererat ikatan emosional dan akan menciptakan kenangan yang abadi.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="pendaftaran" class="section">
+        <div class="container">
+            <h2 class="section-title">PENDAFTARAN</h2>
+            
+            <div class="max-w-2xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="card text-center">
+                        <div class="p-6 h-full flex flex-col">
+                            <h3 class="text-xl font-semibold mb-4">NAJWA</h3>
+                            <p class="text-lg mb-6">085179540785</p>
+                            <a href="https://wa.me/6285179540785" class="btn-primary mt-auto mx-auto">
+                                <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="card text-center">
+                        <div class="p-6 h-full flex flex-col">
+                            <h3 class="text-xl font-semibold mb-4">AFIFAH</h3>
+                            <p class="text-lg mb-6">085697654453</p>
+                            <a href="https://wa.me/6285697654453" class="btn-primary mt-auto mx-auto">
+                                <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <p class="text-lg mb-4">
+                        Pendaftaran ditutup pada 1 Agustus 2025 atau ketika kuota terpenuhi.
+                    </p>
+                    <p class="text-lg">
+                        Silakan hubungi salah satu kontak di atas untuk pendaftaran.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container">
+            <div class="text-center">
+                <div class="flex justify-center mb-6">
+                    <a href="#" class="mx-3 text-2xl hover:text-gray-300 transition-colors"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="mx-3 text-2xl hover:text-gray-300 transition-colors"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="mx-3 text-2xl hover:text-gray-300 transition-colors"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="mx-3 text-2xl hover:text-gray-300 transition-colors"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="mb-6">Share info ini ke teman-teman TEKSAPALA lainnya!</p>
+                <div class="flex justify-center flex-wrap gap-2 mb-6">
+                    <span class="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">#TEKSAPALA</span>
+                    <span class="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">#FAMCAMPTEKSAVOL2</span>
+                    <span class="bg-gray-700 text-white px-3 py-1 rounded-full text-sm">#BersamaAlam</span>
+                </div>
+                <p>© 2025 TEKSAPALA. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
